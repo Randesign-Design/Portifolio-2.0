@@ -1,0 +1,212 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f2f0ef;
+  color: #a3242e;
+  line-height: 1.6;
+  
+}
+
+.poppins-regular {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;}
+  
+  header {
+    background-color: #a3242e;
+    color: #f2f0ef;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .Galeria-do-insta{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+    }
+  
+  .arte {
+    background-color: #111111;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+  }
+  
+
+  .arte img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .veja-mais {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .veja-mais:hover {
+    background-color: #0056b3;
+  }
+  
+  .voltar {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px 15px;
+    background-color: #f2f0ef;
+    color: #a3242e;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .voltar:hover {
+    background-color: #771c23;
+    color: #f2f0ef;
+  }
+  
+  .imagem-galeria {
+    max-width: 95%;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px;
+    
+  }
+
+
+
+
+   .Carrossel-IMG {
+
+     
+    max-width: 95%;
+    height: auto;
+    border-radius: 10px;
+    margin: 0px;
+    
+
+   }
+
+
+  .Wemix {
+  
+    margin: 0;
+   width: 100%;
+   grid-template-columns: repeat(3, 1fr);
+   display: grid;
+   align-content: center;
+   padding: 5px;
+   gap: 15px ;
+
+  }
+
+  .TextoWemix{
+  
+    margin: 0;
+    inset: 0;
+    grid-column: 1 / -1;
+    text-align: center;
+    z-index: 2;
+    padding: 1px;
+
+  }
+   .TextoWemix h1{
+
+    text-align: center;
+    margin: 0;
+    font-size: 50px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+   }
+
+.divisor {
+  border: none;
+  height: 2px;
+  background-color: #a3242e; /* cor da linha */
+  width: 90%;               /* largura */
+  margin: 20px auto;        /* espaço e centralização */
+}
+   
+   .sultecnica {
+  
+
+      display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+
+   }
+  
+
+   .sultecnicaTXT{
+  
+    margin: 0;
+    inset: 0;
+    grid-column: 1 / -1;
+    text-align: center;
+    z-index: 2;
+    padding: 1px;
+   }
+
+
+  @media (max-width: 768px) {
+    .Galeria-do-insta {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+        .sultecnica {
+      grid-template-columns: repeat(auto-fit, minmax(200px,
+       1fr));
+       align-content: center;
+       justify-content: center;
+
+    }
+
+  
+    .imagem-galeria {
+      max-width: 90%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .Galeria-do-insta {
+      grid-template-columns: 1fr;
+    }
+
+  .sultecnica {
+      grid-template-columns: 1fr;
+    }
+
+    .imagem-galeria {
+      max-width: 100%;
+    }
+  }
+
+  .pezão {
+    height: 200px;
+    width: auto;
+   text-align: center;
+   background-color: #a3242e;
+   }
+  
+  .voltar-pe {
+
+    display: inline-block;
+    margin: 75px;
+    padding: 10px 15px;
+   background-color: #f2f0ef;
+   color: #a3242e;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .voltar-pe:hover {
+    background-color: #771c23;
+    color: #f2f0ef;
+  }

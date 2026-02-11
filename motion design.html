@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeria Stanley</title>
+  <link rel="icon" type="image/png" href="imagens/Sem fundoMascote Kdu 2 sem fundo .png">
+  <link rel="stylesheet" href="motion design.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <style>@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Questrial&family=Shrikhand&display=swap');</style>
+
+</head>
+<body>
+  <header class="header-secundario">
+    <a href="index.html" class="voltar">← Voltar para a Galeria</a>
+    <h1>Galeria Motion</h1>
+    <h2 texte-size: 5pt;>Clique para iniciar os videos
+    </h2>
+    
+  </header>
+  <main>
+   
+    <div class="Grid-stanley">
+      
+
+      <div class="Copos-stanley">
+        <video muted loop height="auto" class="imagem-galeria" >
+      
+          <source muted loop src="imagens/so massa.mp4" type="video/mp4">
+          
+        </video>
+             </div>
+
+        
+              <div class="Copos-stanley">
+                  <video muted loop height="auto" class="imagem-galeria">
+                
+                    <source muted loop src="imagens/Tungs motion.mp4" type="video/mp4">
+                  </video>
+                  </div>
+                    
+
+              
+                <div class="Copos-stanley">
+                  <video muted loop height="auto" class="imagem-galeria" >
+                
+                    <source muted loop src="imagens/deu certo.mp4" type="video/mp4">
+                    
+                  </video>
+      </div>
+              
+<div class="Copos-stanley">
+  <video muted loop height="auto" class="imagem-galeria" >
+
+    <source src="imagens//logo vertical com inversão.mp4" type="video/mp4">
+    
+  </video>
+       </div>
+
+
+</div> 
+
+
+
+</div>
+
+</div>
+
+<script>
+  // Seleciona todos os vídeos com a classe "video-hover"
+  const videos = document.querySelectorAll('.imagem-galeria');
+
+  // Adiciona eventos para cada vídeo
+ 
+    videos.forEach((video) => {
+    // Reproduz o vídeo apenas quando o mouse estiver diretamente sobre ele
+    video.addEventListener('mouseover', () => {
+      video.play();
+    });
+
+    // Pausa o vídeo ao tirar o mouse
+    video.addEventListener('mouseout', () => {
+      video.pause();
+      video.currentTime = 0;
+    });
+  });
+
+  // Seleciona todos os vídeos com a classe "video-rapido"
+  const video = document.querySelectorAll('.imagem-galeria');
+
+  // Define a velocidade para cada vídeo
+  videos.forEach((video) => {
+    video.playbackRate = 1.5; // 2.0 significa o dobro da velocidade
+  });
+
+
+</script>
+
+
+
+</body>
+
+<footer class="pezão">
+
+  <a href="index.html" class="voltar-pe">← Voltar para a Galeria</a>
+
+
+</footer>
+</html>

@@ -1,0 +1,399 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f2f0ef;
+  color: #a3242e;
+  line-height: 1.6;
+}
+ 
+.poppins-regular {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;}
+  
+  header {
+    background: #a3242e;
+    color: #f2f0ef;
+    padding: 1rem 0;
+  }
+  
+  
+  header .container {
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+
+  }
+  
+  header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  header nav ul li {
+    margin-left: 20px;
+  }
+  
+  .container a:hover {
+    color: #771c23;
+  }
+  
+.container a {
+
+background-color: #a3242e;
+color: #f2f0ef;
+border-radius: 10px;
+transition: background 0.3s;
+
+}
+
+.sobre-mim {
+margin-top: -45px;
+align-items: center;
+ justify-content: center;
+  display: flex;
+  flex-direction: column;
+text-align: center;
+
+}
+
+  .sobre-mim a {
+
+    display: inline-block;
+    margin-top: 0px;
+    padding: 0.5rem 1rem;
+    color: #f2f0ef;
+    background: #a3242e;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+
+
+  }
+
+  .sobre-mim a:hover {
+
+    color: #f2f0ef;
+    background: #771c23;
+
+  }
+
+  .container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  section {
+    padding: 2rem 0;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 50px;
+  }
+
+  h3 {
+
+    text-align: center;
+  
+    font-size: 25px;
+  }
+
+  
+p1{
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-size: clamp(10px, 5vw, 25px);
+}
+
+p{
+
+font-size: 20px;
+}
+
+  .projetos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+.projeto-item img {
+    width: 100%;
+    border-radius: 5px;
+margin-bottom: 10px;
+    
+}
+ 
+  .projeto-item {
+    background: #f2f0ef;
+    padding: 1rem;
+    border: 2px solid #a3242e;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .projeto-item h3 {
+    margin-top: 0;
+  }
+  
+  .projeto-item a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 0.5rem 1rem;
+    color: #f2f0ef;
+    background: #a3242e;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+
+  .container a {
+    display: inline-block;
+    margin-top: 5px;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+    background-color: #a3242e;
+    color: #f2f0ef;
+  
+    }
+  
+  .projeto-item a:hover {
+    background: #771c23;
+    color: #f2f0ef;
+  }
+  
+  .capa-video video {
+    width: 100%;
+    border-radius: 5px;
+margin-bottom: 10px;
+    
+}
+ 
+  .capa-video {
+    background: #f2f0ef;
+    padding: 1rem;
+    border: 2px solid #a3242e;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .capa-video h3 {
+    margin-top: 0;
+  }
+  
+  .capa-video a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 0.5rem 1rem;
+    color: #f2f0ef;
+    background: #a3242e;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+  
+  .capa-video a:hover {
+    background: #771c23;
+    color: #f2f0ef;
+  }
+
+
+
+.capa-video i {
+
+   color: #a3242e;
+ 
+}
+
+  footer {
+    text-align: center;
+    padding: 1rem 0;
+    color: #f2f0ef;
+    background-color: #a3242e;
+  }
+
+
+    .scroll-container {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;        /* habilita scroll horizontal */
+    scroll-snap-type: x mandatory; /* dá aquele "tranco" suave */
+    -webkit-overflow-scrolling: touch;
+    padding: 10px;
+  }
+
+  .scroll-container::-webkit-scrollbar {
+    display: none; /* esconde a barra */
+  }
+
+  .item {
+    flex: 0 0 auto;
+    width: 120px;
+    height: 200px;
+    background: #ccc;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: start;
+    font-size: 2rem;
+  }
+
+  .botão-de-email {
+    background-color: #f2f0ef; /* Cor de fundo */
+    color:#080808;
+    border: none; /* Sem borda */
+    padding: 10px 20px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    border-radius: 10px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de clique */
+    transition: background-color 0.3s ease; /* Efeito suave ao passar o mouse */
+  }
+  
+  .botão-de-email:hover {
+    background: #771c23;
+    color: #f2f0ef; /* Cor ao passar o mouse */
+  }
+
+/* Estilos do indicador */
+#loading-indicator {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f2f0ef;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  text-align: center;
+}
+
+/* Ocultar indicador inicialmente */
+#loading-indicator.hidden {
+  display: none;
+}
+
+/* Estilo do vídeo */
+#loading-indicator video {
+  width: 700px; /* Ajuste o tamanho do vídeo */
+  height: auto;
+  border-radius: 10px; /* Opcional: bordas arredondadas */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo do texto */
+#loading-indicator p {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #555;
+}
+
+
+/* Estilo do botão de WhatsApp */
+.whatsapp-button {
+  position: fixed; /* Permite que o botão flutue */
+  bottom: 20px;    /* Distância da parte inferior da tela */
+  right: 20px;     /* Distância do lado direito da tela */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #25d366;
+  color: white;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 50%; /* Torna o botão circular */
+  padding: 15px;
+  width: 30px;        /* Largura igual à altura */
+  height: 30px;       /* Altura igual à largura */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, background-color 0.3s;
+  z-index: 1000; /* Garante que o botão fique acima do conteúdo */
+}
+
+.whatsapp-button:hover {
+  background-color: #1da851;
+}
+ 
+.whatsapp-button img {
+  width: 45px;   /* Aumenta o tamanho da imagem */
+  height: 45px;  /* Mantém a altura proporcional */
+}
+
+
+.Behance-button {
+  position: fixed; /* Permite que o botão flutue */
+  bottom: 100px;    /* Distância da parte inferior da tela */
+  right: 20px;     /* Distância do lado direito da tela */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  color: white;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 50%; /* Torna o botão circular */
+  padding: 15px;
+  width: 30px;        /* Largura igual à altura */
+  height: 30px;       /* Altura igual à largura */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* Garante que o botão fique acima do conteúdo */
+}
+
+.Behance-button:hover {
+  background-color: #f8f8f8;
+}
+ 
+.Behance-button img {
+  width: 70px;   /* Aumenta o tamanho da imagem */
+  height: 70px;  /* Mantém a altura proporcional */
+}
+
+@media (max-width: 768px){
+
+.whatsapp-button {
+
+  position: fixed; /* Permite que o botão flutue */
+  bottom: 20px;    /* Distância da parte inferior da tela */
+  right: 20px;     /* Distância do lado direito da tela */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #25d366;
+  color: white;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 50%; /* Torna o botão circular */
+  padding: 15px;
+  width: 25px;        /* Largura igual à altura */
+  height: 25px;       /* Altura igual à largura */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, background-color 0.3s;
+  z-index: 1000; /* Garante que o botão fique acima do conteúdo */
+
+
+}
+
+.zap{
+ width: 80%;  
+height: auto;
+}
+
+}
+
+ 
+
+
