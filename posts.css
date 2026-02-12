@@ -88,18 +88,35 @@ body {
     height: auto;
     border-radius: 10px;
     margin: 0px;
-    
 
    }
+
+   .carrossel-Wemix {
+
+    border: 2px #a3242e;
+    margin: 0;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    display: grid;
+    align-content: center;
+    padding: 5px;
+    gap: 15px ;
+     grid-column: 1 / -1;
+
+  }
 
 
   .Wemix {
   
     margin: 0;
    width: 100%;
+   height: auto;
    grid-template-columns: repeat(3, 1fr);
    display: grid;
    align-content: center;
+   align-items: center;
+   justify-content: center;
+   justify-items: center;
    padding: 5px;
    gap: 15px ;
 
@@ -126,11 +143,13 @@ body {
 
 .divisor {
   border: none;
-  height: 2px;
+  height: 1px;
   background-color: #a3242e; /* cor da linha */
   width: 90%;               /* largura */
   margin: 20px auto;        /* espaço e centralização */
 }
+
+
    
    .sultecnica {
   
@@ -154,39 +173,95 @@ body {
     padding: 1px;
    }
 
+    .SultecIMG {
 
-  @media (max-width: 768px) {
-    .Galeria-do-insta {
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
+    max-width: 95%;
+    height: auto;
+    border-radius: 10px;
+    margin: 0px;
 
-        .sultecnica {
-      grid-template-columns: repeat(auto-fit, minmax(200px,
-       1fr));
-       align-content: center;
-       justify-content: center;
+  }
 
-    }
+  .SultecIMG-C {
 
+    max-width: 100%;
+    height: auto;
+    border-radius: 0px;
+    margin: 0px;
+
+  }
+
+
+  .Sultec-Carrossel {
+
+    border-radius: 0;
+    margin: 0;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    align-content: center;
+    padding: 5px;
+    gap: 1px ;
+    grid-column: 1 / -1;
+
+  }
+
+
+
+   .carrossel-Dentalshop {
+
+    
+    margin: 0;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    display: grid;
+    align-content: center;
+    padding: 5px;
+    gap: 15px ;
+     grid-column: 1 / -1;
+
+  }
+
+  .DentalshopTXT{
   
-    .imagem-galeria {
-      max-width: 90%;
-    }
+    margin: 0;
+    inset: 0;
+    grid-column: 1 / -1;
+    text-align: center;
+    z-index: 2;
+    padding: 1px;
+   }
+
+
+  .Dentalshop {
+  
+    margin: 0;
+   width: 100%;
+   grid-template-columns: repeat(3, 1fr);
+   display: grid;
+   align-content: center;
+   padding: 5px;
+   gap: 15px ;
+
   }
   
-  @media (max-width: 480px) {
-    .Galeria-do-insta {
-      grid-template-columns: 1fr;
-    }
+  .DentalshopIMG {
 
-  .sultecnica {
-      grid-template-columns: 1fr;
-    }
+    max-width: 95%;
+    height: auto;
+    border-radius: 10px;
+    margin: 0px;
 
-    .imagem-galeria {
-      max-width: 100%;
-    }
   }
+
+
+  @media (max-width: 768px) {}
+    
+    
+
+  
+  @media (max-width: 480px) {}
+   
 
   .pezão {
     height: 200px;
