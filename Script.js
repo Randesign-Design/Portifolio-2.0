@@ -3,23 +3,28 @@
 
 // Função para configurar o controle de hover em um vídeo específico
 function setupVideoHover(videoElement) {
-    if (!videoElement || videoElement.tagName !== 'VIDEO') {
+    if (!videoElement || videoElement.tagName !== 'VIDEO') 
+        {
         console.error('Elemento de vídeo inválido');
         return;
     }
 
+    videoElement.playbackRate = 1;
+
     // Event listener para quando o mouse entra na área do vídeo
-    videoElement.addEventListener('mouseenter', function() {
-        // Reproduz o vídeo quando o mouse entra
-        videoElement.play().catch(function(error) {
-            console.log('Erro ao reproduzir vídeo:', error);
-        });
+        videoElement.addEventListener('mouseenter', () => {
+        if (videoElement.paused) {
+            videoElement.play().catch(() => {});
+        }
     });
 
     // Event listener para quando o mouse sai da área do vídeo
     videoElement.addEventListener('mouseleave', function() {
         // Pausa o vídeo quando o mouse sai
-        videoElement.pause();
+       videoElement.addEventListener('mouseleave', function () {
+    videoElement.pause();
+    videoElement.currentTime = 0; // opcional
+});
     });
 }
 
@@ -62,3 +67,39 @@ window.setupVideoHover = setupVideoHover;
 window.setupAllVideosHover = setupAllVideosHover;
 window.setupVideoHoverById = setupVideoHoverById;
 window.setupVideoHoverByClass = setupVideoHoverByClass;
+
+
+
+const section = document.querySelector(".carrossel-Wemix");
+const track = document.querySelector(".carrossel-Wemix");
+
+let currentX = 0;
+
+function getMaxScroll(){
+  return track.scrollWidth - window.innerWidth;
+}
+
+section.addEventListener("wheel", (e) => {
+
+  const maxScroll = getMaxScroll();
+
+  const scrollingRight = e.deltaY > 0;
+  const scrollingLeft = e.deltaY < 0;
+
+  // se ainda puder mover o carrossel
+  if(
+    (scrollingRight && currentX < maxScroll) ||
+    (scrollingLeft && currentX > 0)
+  ){
+
+    e.preventDefault();
+
+    currentX += e.deltaY * 0.8;
+
+    currentX = Math.max(0, Math.min(currentX, maxScroll));
+
+    track.style.transform = `translateX(${-currentX}px)`;
+
+  }
+
+},{ passive:false });

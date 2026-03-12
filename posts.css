@@ -1,9 +1,11 @@
 body {
+  margin: 0;
   font-family: "Poppins", sans-serif;
   background-color: #f2f0ef;
   color: #a3242e;
   line-height: 1.6;
-  
+  width: 100%;
+overflow-x: hidden;
 }
 
 .poppins-regular {
@@ -79,11 +81,8 @@ body {
   }
 
 
-
-
    .Carrossel-IMG {
 
-     
     max-width: 95%;
     height: auto;
     border-radius: 10px;
@@ -93,7 +92,6 @@ body {
 
    .carrossel-Wemix {
 
-    border: 2px #a3242e;
     margin: 0;
     width: 100%;
     grid-template-columns: repeat(4, 1fr);
@@ -124,7 +122,7 @@ body {
 
   .TextoWemix{
   
-    margin: 0;
+    margin: 15px;
     inset: 0;
     grid-column: 1 / -1;
     text-align: center;
@@ -257,6 +255,7 @@ body {
 
   @media (max-width: 768px) {}
     
+  
     
 
   
