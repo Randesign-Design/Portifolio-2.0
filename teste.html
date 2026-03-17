@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="teste.css">
+</head>
+<body>
+
+    <div class="carrossel-Wemix">
+     
+  <div class="item"> <img src="imagens/Posts/We.mix/Quem-são-as-personalidades--WE.MIX-(03.02)1.png" class="Carrossel-IMG" alt=""> </div>
+ <div class="item"><img src="imagens/Posts/We.mix/Quem-são-as-personalidades--WE.MIX-(03.02)2.png" class="Carrossel-IMG" alt=""> </div>
+   <div class="item"> <img src="imagens/Posts/We.mix/Quem-são-as-personalidades--WE.MIX-(03.02)3.png" class="Carrossel-IMG" alt=""> </div>
+    <div class="item"> <img src="imagens/Posts/We.mix/Quem-são-as-personalidades--WE.MIX-(03.02)4.png" class="Carrossel-IMG" alt=""> </div>
+    <div class="item">  <img src="imagens/Posts/We.mix/Quem-são-as-personalidades--WE.MIX-(03.02)5.png" class="Carrossel-IMG" alt=""> </div>
+     <div class="item">  <img src="imagens/Posts/We.mix/Quem-são-as-personalidades--WE.MIX-(03.02)6.png" class="Carrossel-IMG" alt=""> </div>
+      <div class="item">  <img src="imagens/Posts/We.mix/Quem-são-as-personalidades--WE.MIX-(03.02)7.png" class="Carrossel-IMG" alt=""> </div>
+      <div class="item">  <img src="imagens/Posts/We.mix/Quem-são-as-personalidades--WE.MIX-(03.02)8.png" class="Carrossel-IMG" alt=""> </div>
+      </div> 
+    
+</body>
+</html>
+
+<script>
+
+const section = document.querySelector(".carrossel-Wemix");
+const track = document.querySelector(".carrossel-Wemix");
+
+let currentX = 0;
+
+const maxScroll = track.scrollWidth - window.innerWidth;
+
+section.addEventListener("wheel", (e) => {
+
+  e.preventDefault();
+
+  currentX += e.deltaY * 0.8;
+
+  currentX = Math.max(0, Math.min(currentX, maxScroll));
+
+  track.style.transform = `translateX(${-currentX}px)`;
+
+},{ passive:false });
+
+</script>
