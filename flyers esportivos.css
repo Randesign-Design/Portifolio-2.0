@@ -3,6 +3,7 @@ body {
   background-color: #f2f0ef;
   color: #a3242e;
   line-height: 1.6;
+  margin: 0px;
 }
 
 .poppins-regular {
@@ -58,8 +59,8 @@ justify-items: center;
   display: inline-block;
   margin: 20px;
   padding: 10px 15px;
-  background-color: #f2f0ef;
-  color: #a3242e;
+  background-color: #a3242e;
+    color: #f2f0ef;
   text-decoration: none;
   border-radius: 5px;
 }
@@ -109,8 +110,8 @@ justify-items: center;
   display: inline-block;
   margin: 75px;
   padding: 10px 15px;
- background-color: #f2f0ef;
- color: #a3242e;
+ background-color: #a3242e;
+    color: #f2f0ef;
   text-decoration: none;
   border-radius: 5px;
 }
