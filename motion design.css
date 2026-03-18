@@ -110,16 +110,24 @@ header {
   
   
   @media (max-width: 768px) {
-    .Grid-stanley {
+    .Grid-motion {
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      align-items: center;
+      align-content: center;
     }
   
     .imagem-galeria {
       max-width: 90%;
       padding: 5px;
+      
+    }
+
+    .Motion {
+      max-width: 90%;
     }
   
   }
+
   
   @media (max-width: 1100 ) and (min-width: 521px){
   

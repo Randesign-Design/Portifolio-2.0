@@ -255,7 +255,45 @@ overflow-x: hidden;
 
   @media (max-width: 768px) {}
     
-  
+  .carrossel-Wemix {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      align-items: center;
+      align-content: center;
+    }
+
+    .carrossel-Dentalshop {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      align-items: center;
+      align-content: center;
+    }
+
+    .Wemix {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      align-items: center;
+      align-content: center;
+    }
+
+    .Sultec-Carrossel {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      align-items: center;
+      align-content: center;
+    }
+    
+    .sultecnica {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      align-items: center;
+      align-content: center;
+    }
+    
+
+    .Dentalshop {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      align-items: center;
+      align-content: center;
+    }
+    
+
+
     
 
   
